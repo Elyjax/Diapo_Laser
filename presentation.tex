@@ -4,6 +4,8 @@
 \usepackage[french]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{makecell}
+
 
 \usetheme{Warsaw}
 \setbeamerfont{page number in head/foot}{size=\large}
@@ -97,6 +99,19 @@
 \end{frame}
 
 
+\begin{frame}
+	\frametitle{Principe de la détection}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\includegraphics[width=\textwidth]{Docs/detection.png}		
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			Distortion de l'espace-temps
+			\\
+			On détecte cette distortion grâce à un interféromètre
+		\end{column}
+	\end{columns}
+\end{frame}
 \section{Présentation des interféromètres LIGO / VIRGO}
 \begin{frame}
 	\frametitle{L'interféromètre VIRGO}
@@ -104,8 +119,8 @@
 		\begin{column}{0.5\textwidth}
 			\small
 			\begin{enumerate}[-]
-				\item 2 bras de 4km de long parfaitement horizontaux (Sous Vide)
-				\item Système complètement isolé de l'exterieur
+				\item 2 bras de 4km de long parfaitement horizontaux (Sous vide)
+				\item Un système optique  totalement isolé de l'exterieur
 			\end{enumerate}
 		\end{column}
 		\begin{column}{0.5\textwidth}
@@ -113,27 +128,82 @@
 		\end{column}
 	\end{columns}
 	\bigskip
-	2 interféromètres: VIRGO (Italie) et LIGO(Hanford(Washington) / Livinston (Louisianne))
+	3 interféromètres: VIRGO (Italie) et LIGO(Hanford(Washington) / Livinston (Louisianne))
 \end{frame}
 \section{LASER}
 
-
 \begin{frame}
-	\frametitle{Système injection}
-	2 Lasers: Un laser maître et un laser esclave
-	\break
+	\frametitle{Système à injection}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\includegraphics[width=\textwidth]{Docs/NPRO.png}
+		\end{column}
+			
 
-	On injecte un rayonnement laser dans la cavité du second laser pour faire change son gain et modifier la fréquence d'émission du second laser.
+		\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item 2 Lasers: Un laser maître et un laser esclave
+					\item On injecte un rayonnement laser dans la cavité du second laser pour faire changer son gain et modifier la fréquence d'émission du second laser.
+				\end{itemize}
+		\end{column}
+	\end{columns}
 \end{frame}
 
+
+
 \begin{frame}
-	\frametitle{Le laser de LIGO}
-	Fonctionne en quatre étapes
+	\frametitle{Le laser de VIRGO}
+	Fonctionne en deux étapes
 	\begin{enumerate}[1.]
-		\item Emission du laser Maître par une photodiode
-		\item Emission du laser Esclave
-		\item Première amplification
-		\item Seconde amplification 
+		\item Emission du laser Maître
+		\item Emission du laser Esclave 
 	\end{enumerate}
+	\begin{table}
+	\small
+	\centering
+	\begin{tabular}{|l|l|l|}
+	\hline
+		\thead{Taille du faisceau \\ ($W_0$ [mm])}& \thead{Longueur de Rayleigh \\ ($z_0$ [m])} & \thead{Divergence du \\ faisceau ($\theta_0$ [$\mu rad$])} \\
+		\hline
+		4.5 +/- 0.5 & 60 +/- 10 & 75 -/+ 10 \\
+		\hline
+	\end{tabular}
+	\end{table}
+
 \end{frame}
+\begin{frame}
+\frametitle{Le laser VIGO}
+Fonctionnement en quatre étapes:
+\begin{itemize}
+	\item Emission du laser maître
+	\item Emission du laser esclave
+	\item Première amplification
+	\item Seconde amplification
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Cavité de Recyclage}
+	\includegraphics[height=\textheight]{Docs/recycling_mirrors.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Les Miroirs}
+	\begin{columns}
+	
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item Miroirs en silice
+				\item Pertes très faibles ( < 2\%)
+				\item Abbérations ($10^{-8} m$)
+				\item Diamètre: 35 cm
+			\end{itemize}
+		\end{column}
+		
+		\begin{column}{0.5\textwidth}
+			\includegraphics[width=\textwidth]{Docs/miroir.png}
+		\end{column}
+	\end{columns}
+\end{frame}
+
 \end{document}
