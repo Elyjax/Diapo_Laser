@@ -5,10 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{makecell}
-
-
 \usetheme{Warsaw}
-\setbeamerfont{page number in head/foot}{size=\large}
 
 \beamertemplatenavigationsymbolsempty
 \date{}
@@ -37,15 +34,31 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{Propriétés}
+	\center\includegraphics[scale = 0.4]{Docs/tintin.png}
+	\bigskip
 	\begin{itemize}
-		\item Analogue à onde électromagnétique : émis lorsque un corps massique accélère
+		\item Analogue à une onde électromagnétique : émis lorsque un corps massique accélère
 		\item Vitesse de propagation c
 		\item Mais décroissance en 1/R
 		\item Amplitude extrêmement faible
-		\bigskip
-		\center\includegraphics[scale = 0.4]{Docs/tintin.png}
 	\end{itemize}
+\end{frame}
 
+\begin{frame}
+	\frametitle{Ordres de grandeur}
+	\begin{tabular}{|m{3.5cm}|c|c|c|}
+		\hline
+		Source émettrice &
+		Distance &
+		Amplitude (m) &
+		Puissance (W)\\\hline
+		Cylindre d'acier de 500 tonnes tournant à 5 tours/s autours de son axe & 1 m & 
+		$2 \cdot 10^{-34}$ & $10 \cdot 10^{-29}$\\\hline
+		Bombre H, 1 Megatonne & 10 km & $2 \cdot 10^{-39}$ & $10^{-11}$\\\hline
+		Supernova de 10 masses solaires & 10 Mpc & $10^{-21}$ & $10^{44}$\\\hline
+		Coalescence de 2 trous noirs de 10 masses solaires chacun & 10 Mpc & $10^{-20}$ & $10^{50}$\\\hline
+	\end{tabular}
 \end{frame}
 
 
@@ -90,9 +103,7 @@
 
 \end{frame}
 
-
 \section{Présentation du Michelson}
-
 \begin{frame}
 	\frametitle{Interféromètre de Michelson}
 	\includegraphics[scale=0.5]{Docs/interferometre_michelson.png}
@@ -112,6 +123,7 @@
 		\end{column}
 	\end{columns}
 \end{frame}
+
 \section{Présentation des interféromètres LIGO / VIRGO}
 \begin{frame}
 	\frametitle{L'interféromètre VIRGO}
@@ -130,8 +142,8 @@
 	\bigskip
 	3 interféromètres: VIRGO (Italie) et LIGO(Hanford(Washington) / Livinston (Louisianne))
 \end{frame}
-\section{LASER utilisés}
 
+\section{LASER utilisés}
 \begin{frame}
 	\frametitle{Système à injection}
 	\begin{columns}
@@ -148,8 +160,6 @@
 		\end{column}
 	\end{columns}
 \end{frame}
-
-
 
 \begin{frame}
 	\frametitle{Le laser de VIRGO}
@@ -171,6 +181,7 @@
 	\end{table}
 
 \end{frame}
+
 \begin{frame}
 \frametitle{Le laser LIGO}
 Fonctionnement en quatre étapes:
@@ -183,12 +194,27 @@ Fonctionnement en quatre étapes:
 \end{frame}
 
 \section{Cavités de Fabry-Pérot}
-
-
-\section{Cavité de recyclage}
 \begin{frame}
-	\frametitle{Cavité de Recyclage}
-	\includegraphics[height=\textheight]{Docs/recycling_mirrors.png}
+	\frametitle{Intérêt du dispositif}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Docs/fabry_perot.jpg}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+		Problème : 4km insuffisant pour obtenir une figure d'intérférence dûe aux ondes gravitationnelles\\
+		Solution : On fait des aller-retours en utilisant des miroirs!
+		\bigskip\\
+		280 aller-retours : 1120km parcourus (de fait le Michelson le plus précis au monde actuellement)
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+\section{Cavités de recyclage}
+\begin{frame}
+	\frametitle{Cavités de Recyclage}
+	\includegraphics[scale=0.3]{Docs/recycling_mirrors.png}\\
+	200W en entrée => 750kW nécessaire (facteur 3750)
 \end{frame}
 
 \begin{frame}
@@ -208,6 +234,17 @@ Fonctionnement en quatre étapes:
 			\includegraphics[width=\textwidth]{Docs/miroir.png}
 		\end{column}
 	\end{columns}
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}
+	\frametitle{Conclusion}
+	\begin{itemize}
+		\item Formidable avancée technologique
+		\item Découverte surmédiatisée
+		\item De futurs résultats prometteurs
+	\end{itemize}
+	\center\includegraphics[scale=0.1]{Docs/ligo.jpeg}
 \end{frame}
 
 \end{document}
